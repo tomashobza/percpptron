@@ -1,10 +1,10 @@
 build: clean
 	g++ main.cpp -o perccptron
 
-run:
+run: build
 	./perccptron
 
 clean:
-	rm ./perccptron
+	rm -f ./perccptron
 
 all: clean build run
